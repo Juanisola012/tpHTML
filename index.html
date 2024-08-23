@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer HTML</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header,
+        footer{
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10;
+        }
+        main{
+            padding: 10;
+        }
+        section{
+            margin-bottom: 20px;
+            border: 1px solid grey;
+            padding: 8;
+            background-color: beige
+            ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi primer HTML</h1>
+    </header>
+    <!-- Punto 1 -->
+    <section>
+    <div>
+    <h1 id="seccion1">1. Estructura Básica del Documento HTML</h1>
+</section>
+<article>
+    <h2>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un titulo.</h2>
+    </div>
+</article>
+    <!-- Punto 2 -->
+     <section><h2>2. Encabezado y propiedades</h2></section>
+    <article>
+    <div>
+    <h1 id="seccion2"><b>2. Esto es un H1 con Negrita</b></h1>
+    <h2><em>2. Esto es un H1 en cursiva</em></h2>
+    <h3><mark>2. Esto es un H3 resaltado</mark></h3>
+    <h4><Span>2. Esto es un H4 pero con Span para definir la linea de texto</Span></h4>
+    <h5>2. Esto es un H5 sin modificaciones</h5>
+    <h6>2. Esto es un H6 pero utilizando br para <br> seguir escribiendo abajo</h6>
+    </div>
+    </article>
+    <!-- Punto 3 -->
+    <section>
+     <div>
+        <h1 id="seccion3">3. Divisiones y Agrupacion de contenido</h1>
+    </section>
+        <div>
+            <h2>Titulo secundario numero 1</h2>
+            <p>Este es un parrafo para utilizar en el titulo secundario numero 1</p>
+        </div>
+        <div>
+            <h2>Titulo secundario numero 2</h2>
+            <p>Este es un parrafo para utilizar en el titulo secundario numero 2</p>
+        </div>
+    </div>
+    
+    <!-- Punto 4 -->
+    <section>
+     <div>
+        <nav>
+        <h1>4. Enlaces y Listas</h1>
+    </section>
+    <article>
+        <h2>Enlace Externo</h2>
+        <a href="https://www.bocajuniors.com.ar/" target="_blank">Esto nos llevara a la pagina del club mas grande de Argentina</a>
+        </nav>
+        <h2>Enlace Interno</h2>
+        <a href="#seccion3">Este enlace nos llevara a la seccion de Divisiones y agrupaciones</a><br>
+        <a href="#seccion5">Este enlace nos llevara a la seccion de Multimedia</a><br>
+        <a href="#seccion1">Este enlace nos llevara a la seccion de Estructura Basica </a>
+
+
+     </div>
+     <h2>Listas Ordenadas</h2>
+     <div>
+        <ol>
+            <li>Soy el elemento 1 de la lista ordenada</li>
+            <li>Soy el elemento 2 de la lista ordenada</li>
+            <li>Soy el elemento 3 de la lista ordenada</li>
+            <li>Soy el elemento 4 de la lista ordenada</li>
+        </ol>
+        <h2>Listas Desordenadas</h2>
+        <ul>
+            <li>Soy el elemento 1 de la lista desordenada</li>
+            <li>Soy el elemento 2 de la lista desordenada</li>
+            <li>Soy el elemento 3 de la lista desordenada</li>
+            <li>Soy el elemento 4 de la lista desordenada</li>
+        </ul>
+    </article>
+     </div>
+     
+     <!-- Punto 5 -->
+     <section>
+      <div>
+      <h2 id="seccion5">5. Elementos Multimedia</h2>
+      </section>
+      <article>
+      <h3>Para la imagen utilice el "img" y para el video al ser de youtube en vez de utilizar "video" utilice "iframe"</h3>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_886882-MLA50145809160_052022-O.webp" width="400px" height="400px" alt="Es una imagen del escudo de boca"> 
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/jZFkCNVLOmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls ></audio>
+        </article>
+
+    </div>
+    <!-- Punto 6 -->
+     <section>
+     <h2>6. Tablas</h2>
+    </section>
+    <style>
+        table{ width: 100%;
+            border-collapse: collapse;
+
+        }
+        th,
+        td{
+            border: 1px solid blue;
+            padding: 8px;
+            text-align: center;
+        }
+        tfoot{
+            font-weight: bold;
+            background-color: aquamarine;
+        }
+    </style>
+    <div>
+        <article>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Fila 1, Celda 1</td>
+                        <td>Fila 1, Celda 2</td>
+                        <td>Fila 1, Celda 3</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 2, Celda 1</td>
+                        <td>Fila 2, Celda 2</td>
+                        <td>Fila 2, Celda 3</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 3, Celda 1</td>
+                        <td>Fila 3, Celda 2</td>
+                        <td>Fila 3, Celda 3</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total 1</td>
+                    <td>Total 2</td>
+                    <td>Total 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+
+     </div>
+     <!-- Punto 7 -->
+      <section>
+     <h2>7. Formularios</h2>
+      </section>
+      <article>
+     <form>
+        <div>
+        <label for="">Email</label>
+        <input type="email" placeholder="Example@Utn.com"/>
+        </div>
+        <div>
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre">
+        </div>
+        <div>
+        <label for="">Apellido</label>
+        <input type="text" placeholder="Ingrese su apellido">
+        </div>
+        <div>
+        <label for="">Texto</label>
+        <textarea></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar Formulario</button>
+        </div>
+        
+     </form>
+    </article>
+    <footer>
+        <h2>Html de Juan Ignacio Sola</h2>
+    </footer>
+</body>
+</html>
